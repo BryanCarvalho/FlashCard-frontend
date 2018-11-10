@@ -1,0 +1,99 @@
+.deckCard {
+    background-color: #334955;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 2px 1px -1px rgba(0, 0, 0, 0.12), 0 1px 1px 0 rgba(0, 0, 0, 0.14);
+    transition: box-shadow 0.2s ease;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+
+    &:hover {
+        box-shadow: 5px 5px 5px -3px rgba(0, 0, 0, 0.2), 3px 3px 14px 2px rgba(0, 0, 0, 0.12), 8px 8px 10px 1px rgba(0, 0, 0, 0.14);
+    }
+    
+    
+    &__upper {
+        padding: 2.5rem 1.5rem;
+        flex-grow: 1;
+    }
+    &__lower {
+        padding: 1rem;
+        background-color: #ffffff;
+
+        svg {
+            display: block;
+        }
+    }
+
+    &__title {
+        font-family: 'Work Sans', sans-serif;
+        font-size: 25.4px;
+        font-weight: bold;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.26;
+        letter-spacing: normal;
+        color: #ffffff;
+        margin-bottom: 1rem;
+        
+    }
+    &__question {
+        font-family: 'Work Sans', sans-serif;
+        font-size: 16px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.42;
+        letter-spacing: 0.5px;
+        color: #334955;
+    }
+    &__date {
+        font-family: 'Work Sans', sans-serif;
+        font-size: 16px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.42;
+        letter-spacing: 0.5px;
+        color: #b3c1cc;
+    }
+    &__button {
+        width: 3rem;
+        height: 3rem;
+        text-align: center;
+        flex: 0 0 auto;
+        padding: 12px;
+        border-radius: 50%;
+        margin-left: 0.5rem;
+        background-color: #eef0f2;
+        outline: none;
+        cursor: pointer;
+        transition: background-color 0.2s ease;
+
+        &--active {
+            background-color: #f0ad3c;
+
+            svg path {
+                fill: #334955;
+            }
+        }
+
+        &:hover {
+            svg path {
+                fill: #334955;
+            }
+        }
+
+        svg {
+            width: 100%;
+            display: flex;
+            align-items: inherit;
+            justify-content: inherit;
+
+            path {
+                transition: all 0.2s ease;
+            }
+        }
+    }
+}
